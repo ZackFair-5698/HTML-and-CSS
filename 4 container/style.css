@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  }
+
+*
+{
+    box-sizing:border-box;
+}
+
+body
+{
+    background-color: #f1f1f1;
+    font-family: Product Sans;
+}
+
+/* Container of 4 divs */
+
+
+.container 
+{
+    margin: 20px auto;
+    width:400px;
+    height: 370px;
+    display:grid;
+    grid-template-columns: 400px 400px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-content: center;
+}
+
+/* First Conainter (Google Container)*/
+
+/* 1st Div: G O O G L E */
+.box1
+{
+    /* background-color:#c4c4c4; */
+    border-style: solid;
+    border-color: #333;
+    border-width: 5px;
+    border-radius:10px;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:50px;
+    font-family:'Product Sans'
+}
+
+/* V Aesthetics For Box1 V */
+span 
+{
+	display: inline-block;
+	padding: 10px;
+	text-align: center;
+	
+    /* Font Color Specificity */
+	&:nth-child(6n+1) { color: #4285F4; }
+	&:nth-child(6n+2) { color: #EA4335; }
+	&:nth-child(6n+3) { color: #FBBC05; }
+	&:nth-child(6n+4) { color: #4285F4; }
+	&:nth-child(6n+5) { color: #34A853; }
+	&:nth-child(6n+6) { color: #EA4335; }
+}
+
+/* 2nd Container */
+.box2
+{
+    background-image: url("https://cdn.dribbble.com/users/9378043/screenshots/16832559/media/10b207c918d604662e088308d16b366d.png");
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    border-radius:10px;
+    display:flex;
+    font-size:40px;
+}
+
+/* 3rd Container */
+.box3
+{
+    
+    /* background-color:#333; */
+    border-style: solid;
+    border-color: #333;
+    border-width: 5px;
+    border-radius:10px;
+    color:#242424;
+    font-size:20px;
+    align-items: center;
+    font-family:'Product Sans';
+    justify-content: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    /* padding: 10px; */
+    gap: 15px;
+}
+
+/* Aesthetics for box 3 */
+.boxa
+{
+    border-radius:15px;
+    border-style: solid;
+    border-color: #333;
+    border-width: 3px;
+    border-radius:15px;
+    display: flex;
+    width: 55px;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    
+    /* Box Color Specificity */
+	&:nth-child(8n+1) 
+    { 
+        background-color: #ff5733;
+    }
+	&:nth-child(8n+2) 
+    { 
+        background-color: #33ff57;
+    }
+	&:nth-child(8n+3) 
+    { 
+        background-color: #5733ff;
+    }
+	&:nth-child(8n+4) 
+    { 
+        background-color: #ffff33;
+    }
+	&:nth-child(8n+5) 
+    { 
+        background-color: #33ffff;
+    }
+}
+
+.box3a
+{
+    color:#242424;
+    font-size:20px;
+    align-items: center;
+    font-family:'Product Sans';
+    justify-content: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: -45px;
+}
+
+.boxb
+{
+    border-style: solid;
+    border-color: #333;
+    border-width: 3px;
+    border-radius:15px;
+    display: flex;
+    width: 55px;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    
+    /* Box Color Specificity */
+	&:nth-child(3n+1) 
+    { 
+        background-color: #ff33ff;
+    }
+	&:nth-child(3n+2) 
+    { 
+        background-color: #33ffc5;
+    }
+	&:nth-child(3n+3) 
+    { 
+        background-color: #8133ff;
+    }
+}
+
+
+/* 4th Div: Name */
+.box4
+{
+    /* background-color:#333; */
+    border-style: solid;
+    border-color: #333;
+    border-width: 5px;
+    border-radius:10px;
+    border-radius:10px;
+    color:#333;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:35px;
+    font-family:sans-serif;
+    font-weight: bold;
+}
